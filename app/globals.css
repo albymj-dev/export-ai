@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+:root {
+  --background: #05070a;
+  --surface: #0b0f14;
+  --surface-elevated: #10161e;
+  --surface-border: #1a2332;
+  --primary-accent: #2563eb;
+  --secondary-accent: #06b6d4;
+  --text-main: #f1f5f9;
+  --text-muted: #94a3b8;
+}
+
+body {
+  background-color: #05070a;
+  color: #f1f5f9;
+  font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom scrollbar for enterprise data views */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0b0f14;
+}
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #334155;
+}
+
+/* Subtle scanning beam animation for AI processing */
+@keyframes scanline {
+  0% { transform: translateY(-100%); }
+  100% { transform: translateY(1000%); }
+}
+
+.animate-scanline {
+  animation: scanline 3s linear infinite;
+}
+
+/* Print view optimization for export verification certificates */
+@media print {
+  body {
+    background: white !important;
+    color: black !important;
+  }
+  .no-print {
+    display: none !important;
+  }
+}

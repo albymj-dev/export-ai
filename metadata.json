@@ -1,0 +1,6 @@
+{
+  "name": "EXPORTAI - Export Document Verification System",
+  "description": "Enterprise AI-powered export document verification and cross-document discrepancy detection platform.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
